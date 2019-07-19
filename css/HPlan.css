@@ -1,0 +1,439 @@
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei UI", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+.container{
+	width: 100%;
+	height: 100%;
+}
+/*上方导航*/
+header{
+	position: fixed;
+    width: 100%;
+    z-index: 5;
+    border-bottom: 1px solid #e5e5e5;
+    background: #fff;
+}
+header .nav{
+	max-width: 1260px;
+    margin: auto;
+    position: relative;
+}
+.nav-logo{
+	width: 8.3%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.header-logo{
+	height: 60px;
+    margin-right: 20px;
+    line-height: 52px;
+}
+.logoImg{
+	display: inline-block;
+	vertical-align: middle;
+	width: 71px;
+    height: 21px;
+    background: url(../img/HPlanimg/26eb5cd01b4615962d6855d736b005c5_haier2018_hn_ico25_2.png) 0 -630px;
+    display: inline-block;
+    margin: 0 0 5px 5px;
+}
+.nav-menu{
+	width: 66.7%;
+	min-height: 60px;
+    line-height: 60px;
+    display: inline-block;
+	vertical-align: middle;
+}
+.nav-menu-list{
+	width: 16.7%;
+	font-weight: bold;
+    text-align: center;
+    display: inline-block;
+	vertical-align: middle;
+	color: #666;
+	font-size: 15px;
+}
+/*轮播整页*/
+.dot {
+	position: fixed;
+	z-index: 1000;
+	width: 40px;
+	height: 200px;
+	right: 30px;
+	top: 50%;
+	opacity: 0;
+}
+
+.dot ul li {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	background: rgb(132, 132, 173);
+	margin: 20px auto;
+	position: relative;
+	cursor: pointer;
+}
+
+.dot ul li .liBg {
+	position: absolute;
+	border-radius: 50%;
+	top: -4px;
+	left: -4px;
+	width: 24px;
+	height: 24px;
+	transition: all 1s;
+	z-index: 200;
+	background: rgba(134, 134, 201, 0.555);
+	display: none;
+}
+#box {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+	/*padding-top: 60px;*/
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	transition: all .6s;
+	text-align: center;
+}
+
+.box1 {
+	background: url(../img/HPlanimg/63032fcbd382ec408b0fd1470fdead27_smartfamily2018_sl_bg1.png) no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+	top: 0;
+}
+.box1-nav{
+	text-align: right;
+    font-size: 0;
+    padding-top: 90px;
+    max-width: 1360px;
+    margin: 0 auto;
+    right: 0 !important;
+    position: relative;
+}
+.cur{
+	color: #333 !important;
+    border-bottom: 2px solid #333;
+}
+.box1-nav li:hover{
+	color: #333;
+    border-bottom: 2px solid #333;
+} 
+.box1-nav li{
+	width: 84px;
+    height: 40px;
+    line-height: 35px;
+    color: #666;
+    text-align: center;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+    opacity: 1;
+    margin: -3px 16px;
+}
+.box2 {
+	/*background: url(../img/HPlanimg/3e3da8f96c70a76dfe93d7859d5526a9_smartfamily2018_sl_bg3.jpg) no-repeat;*/
+	width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+	top: 100%;
+	overflow: hidden;
+    position: relative;
+}
+#imgList1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+    height: 100%;
+    padding-bottom: 50%;
+	/*overflow: hidden;*/
+}
+.pictwo{
+	/*设置浮动*/
+	position: absolute;
+	height: 100%;
+    width: 100%;
+    transition: all .5s;
+}
+.pictwo1{
+    left: 0px;
+    z-index: 99;
+    /*background: url(../img/HPlanimg/3e3da8f96c70a76dfe93d7859d5526a9_smartfamily2018_sl_bg3.jpg) no-repeat;*/
+}
+.pictwo2{
+    left: 100%;
+    /*background: url(../img/HPlanimg/4541788e857b656941e14f7219ca2bcf_smartfamily2018_sl_bg2.jpg) no-repeat;*/
+}
+.pictwo3{
+    left: 200%;
+    /*background:url(../img/HPlanimg/191519177e276fd97cc0e0d4958d4ea0_smartfamily2018_sl_bg4.jpg) no-repeat;*/
+}
+#navDiv1{
+	position: absolute;
+	bottom:100px;
+	right: 12px;
+	z-index: 100;
+}
+#navDiv1 a{
+	width: 60px;
+    height: 4px;
+    display: inline-block;
+    margin: 6px;
+    background: #cac2be;
+    vertical-align: top;
+}
+.box3 {
+	background: url(../img/HPlanimg/6c6fb8a5aeb8b72e6e0b0f7a2e0894e7_smartfamily2018_sl_bg5.jpg) no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+	top: 200%;
+}
+.box3-th{
+	width: 160px;
+    height: 56px;
+    line-height: 56px;
+    text-align: center;
+    color: #fff;
+    
+    display: inline-block;
+    position: relative;
+    top: 60%;
+    font-size: 20px;
+    cursor: pointer;
+}
+.th3{
+	background: #ff6a58;
+}
+.th3:hover{
+	background:#fd442f ;
+}
+.th4{
+	background: #f8b551;
+}
+.th4:hover{
+	background:#ffa827 ;
+}
+.th5{
+	background: #ff6a58;
+}
+.th5:hover{
+	background:#fd442f ;
+}
+.th6{
+	background: #f8b551;
+}
+.th6:hover{
+	background:#ffa827 ;
+}
+
+.box4 {
+	background: url(../img/HPlanimg/945f6f96fd8040ae43a4456d80401a82_smartfamily2018_sl_bg7.jpg) no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+	top: 300%;
+}
+.box5 {
+	background:url(../img/HPlanimg/6a1c2db9296e90bcfb0527c35379c8fc_smartfamily2018_sl_bg9.jpg) no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+	top: 400%;
+}
+
+.box6 {
+	background: url(../img/HPlanimg/192d428e03405d2f1f6720d8dd3596d5_smartfamily2018_sl_bg11.jpg) no-repeat;
+	background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+	top: 500%;
+}
+.box7 {
+	background: #f6f6f6;
+	top: 600%;
+}
+.box7 .tit{
+	color: #513629;
+    font-size: 52px;
+    display: block;
+    padding-top: 7%;
+}
+.box7 .subtit{
+	color: #513629;
+    font-size: 24px;
+    display: block;
+    margin-top: 20px;
+}
+.box7 p{
+	max-width: 1210px;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.box7 .btn{
+	width: 202px;
+    height: 45px;
+    background: #513629;
+    color: #fff;
+    font-size: 23px;
+    line-height: 45px;
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.box7 .btn:hover{
+	background:#3d271b ;
+}
+.box7 .product{
+	background: #f6f6f6;
+    max-width: 1210px;
+    margin: 0 auto;
+}
+.box7 .product-menu{
+	padding: 0 5px;
+	width: 25%;
+	float: left;
+}
+.box7 .product-menu .box{
+	max-width: 280px;
+    max-height: 320px;
+    background: #fff;
+    text-align: center;
+    padding: 35px 0;
+    box-shadow: 0 2px 2px #e6e6e6;
+}
+.box7 .product-menu .box img{
+	width: 83%;
+}
+.box7 .product-menu .box span{
+	font-size: 24px;
+    color: #513629;
+    display: inline-block;
+    margin-top: 34px;
+    margin-bottom: 20px;
+    min-height: 40px;
+}
+.box8 {
+	background: #2b2c2d;
+	top: 700%;
+	padding-bottom: 20px;
+}
+.hn_bottombox{
+	width: 100%;
+    background: #525455;
+    color: #fff;
+    padding-top: 18%;
+    padding-bottom: 40px;
+}
+.hn_bottombox_center{
+	width: 1236px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.hn_bottombox_left{
+	width: 50%;
+	float: left;
+}
+.hn_bottombox_left-1{
+	width: 25%;
+	float: left;
+}
+.footer_tit{
+	text-align: left;
+	font-size: 1em;
+    line-height: 2em;
+    padding-top: 5px;
+}
+.footer_tit em{
+	font-style: normal;
+	color: #999;
+    line-height: 23px;
+    margin-right: 10px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.hn_bottombox_left-1 ul li{
+	color: #999;
+    font-size: 14px;
+    line-height: 23px;
+    text-align: left;
+}
+.hn_bottombox_left-1 ul li:hover{
+	color: white;
+}
+.i_haier{
+	margin-left: 18px;
+	display: block;
+    padding-left: 50px;
+    background: url(../img/indeximg/hn_ico.png) no-repeat left -175px;
+    font-size: 14px;
+    line-height: 25px;
+    height: 25px;
+    width: 80px;
+    box-sizing: border-box;
+    font-style: normal;
+}
+.p{
+	margin-left: -54px;
+	font-size: 13px;
+	padding-bottom: 20px;
+}
+.p em{
+	color: #32beff;
+    font-size: 13px;
+    line-height: 1.8em;
+    font-style: normal;
+}
+.bottombar{
+	background: #2b2c2d;
+    padding: 20px 0;
+    color: #515252;
+}
+.bottombar-co{
+	width: 1236px;
+    margin: 0 auto;
+    text-align: left;
+    position: relative;
+}
+.bottombar-co em{
+	font-size: 14px;
+	color: #666;
+	font-style: normal;
+}
+.bottombar-co em:hover{
+	color: #32beff;
+}
+.right{
+	float: right;
+}
+.right .nn{
+	color: #999;
+    font-size: 14px;
+}
